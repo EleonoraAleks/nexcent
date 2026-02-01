@@ -1,1 +1,1 @@
-h1{color:red}
+.container{max-width:1002px;margin:0 auto;position:relative}.main-section{position:relative;min-height:475px}.main-section__nav-contaier{display:flex;flex-direction:row;justify-content:space-between;height:58px;align-items:center}.main-section__logo{height:16px}.nav-menu__list{display:flex;flex-direction:row;list-style:none}.nav-menu__list-item{margin-left:16px;font-size:12px}.nav-menu:last-child{margin-right:0}.nav-menu a{text-decoration:none;color:black}.nav-menu__btn{padding:10px 22px;color:#4CAF4F;border-radius:10px}

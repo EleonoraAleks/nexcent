@@ -1,2 +1,35 @@
-h1
-  color: red
+.container
+    max-width: 1002px
+    margin: 0 auto
+    position: relative
+
+.main-section
+    position: relative
+    min-height: 475px
+    &__nav-contaier
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        height: 58px
+        align-items: center
+    &__logo
+        height: 16px
+    &__content-container
+
+.nav-menu
+    &__list
+        display: flex
+        flex-direction: row
+        list-style: none
+    &__list-item
+        margin-left: 16px
+        font-size: 12px
+    &:last-child
+        margin-right: 0
+    a
+        text-decoration: none
+        color: black
+    &__btn
+        padding: 10px 22px
+        color: #4CAF4F
+        border-radius: 10px
