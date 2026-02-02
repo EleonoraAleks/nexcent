@@ -1,3 +1,6 @@
+*
+    box-sizing: border-box
+
 .container
     max-width: 1002px
     margin: 0 auto
@@ -6,15 +9,30 @@
 .main-section
     position: relative
     min-height: 475px
-    &__nav-contaier
+    padding-top: 11px
+    &__nav-container
         display: flex
         flex-direction: row
         justify-content: space-between
         height: 58px
         align-items: center
+        padding-left: 100px
+        padding-right: 100px
     &__logo
         height: 16px
+    &__header
+        margin-right: 230px
     &__content-container
+
+        min-height: 416px
+        background-color: #f5f7fa
+        position: relative
+        display: flex
+        flex-direction: row
+        align-items: center
+        justify-content: center
+
+
 
 .nav-menu
     &__list
@@ -26,10 +44,56 @@
         font-size: 12px
     &:last-child
         margin-right: 0
+
     a
         text-decoration: none
         color: black
+    a.nav-menu__btn
+        padding: 10px 22px
+        margin-left: 22px
+        background-color: #4CAF4F
+        color: white
+        border-radius: 5px
+    a.nav-menu__btn:hover
+        background-color: #8bcc8e
+
+.left-wrapper
+    height: 192px
+    width: 457px
+    margin-right: 72px
+    a
+        text-decoration: none
     &__btn
         padding: 10px 22px
-        color: #4CAF4F
-        border-radius: 10px
+        background-color: #4CAF4F
+        color: white
+        border-radius: 5px
+    &__btn:hover
+        background-color: #8bcc8e
+    &__header
+        font-size: 45px
+        margin-bottom: 11px
+    &__text
+        margin-bottom: 22px
+        font-size: 14px
+.span-text
+    color: #4CAF4F
+.right-wrapper
+    top: 100px
+    &__img
+        width: 272px
+        height: 283px
+
+.slider-dots
+    position: absolute
+    display: flex
+    justify-content: center
+    gap: 5px
+    &__dot
+        height: 7px
+        width: 7px
+        border-radius: 50%
+        background-color: rgba(76, 175, 79, 0.3)
+        margin-top: 390px
+    &__dot-active
+        background-color: #4CAF4F
