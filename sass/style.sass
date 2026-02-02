@@ -1,5 +1,10 @@
+@import "reset.scss"
+@import "normalizez.scss"
 *
     box-sizing: border-box
+
+h1, h2, h3, h4, h5, h6, p
+    margin: 0
 
 .container
     max-width: 1002px
@@ -16,14 +21,13 @@
         justify-content: space-between
         height: 58px
         align-items: center
-        padding-left: 100px
-        padding-right: 100px
+        padding-left: 95px
+        padding-right: 95px
     &__logo
         height: 16px
     &__header
         margin-right: 230px
     &__content-container
-
         min-height: 416px
         background-color: #f5f7fa
         position: relative
@@ -40,17 +44,17 @@
         flex-direction: row
         list-style: none
     &__list-item
-        margin-left: 16px
+        margin-left: 18px
         font-size: 12px
-    &:last-child
-        margin-right: 0
+        &:last-child
+            margin-right: 0
 
     a
         text-decoration: none
         color: black
     a.nav-menu__btn
-        padding: 10px 22px
-        margin-left: 22px
+        padding: 10px 15px
+        margin-left: 18px
         background-color: #4CAF4F
         color: white
         border-radius: 5px
@@ -73,9 +77,11 @@
     &__header
         font-size: 45px
         margin-bottom: 11px
+        color: #4d4d4d
     &__text
         margin-bottom: 22px
         font-size: 14px
+        color: #717171
 .span-text
     color: #4CAF4F
 .right-wrapper
@@ -97,3 +103,26 @@
         margin-top: 390px
     &__dot-active
         background-color: #4CAF4F
+
+
+.icons-container
+    &__content
+        text-align: center
+    &__header
+        font-size: 25px
+        color: #4d4d4d
+        margin: 27px 0 5px 0
+    &__text
+        color: #717171
+        font-size: 14px
+        margin-bottom: 28px
+    &__carousel
+        display: flex
+        justify-content: center
+        margin-top: 28px
+    &__icon
+        width: 33px
+        height: 33px
+        margin-right: 94px
+        &:last-child
+            margin-right: 0
