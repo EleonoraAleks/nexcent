@@ -6,6 +6,13 @@
 h1, h2, h3, h4, h5, h6, p
     margin: 0
 
+$color-header:  #4d4d4d
+$color-text: rgba(113, 113, 113, 0.76)
+$color-button: #4CAF4F
+$color-background: #F5F7FA
+$color-footer: #263238
+
+
 .container
     max-width: 1002px
     margin: 0 auto
@@ -28,13 +35,15 @@ h1, h2, h3, h4, h5, h6, p
     &__header
         margin-right: 230px
     &__content-container
-        min-height: 416px
-        background-color: #f5f7fa
+        min-height: 475px
+        background-color: $color-background
         position: relative
         display: flex
         flex-direction: row
         align-items: center
         justify-content: center
+        margin-bottom: 27px
+
 
 
 
@@ -55,7 +64,7 @@ h1, h2, h3, h4, h5, h6, p
     a.nav-menu__btn
         padding: 10px 15px
         margin-left: 18px
-        background-color: #4CAF4F
+        background-color: $color-button
         color: white
         border-radius: 5px
     a.nav-menu__btn:hover
@@ -69,7 +78,7 @@ h1, h2, h3, h4, h5, h6, p
         text-decoration: none
     &__btn
         padding: 10px 22px
-        background-color: #4CAF4F
+        background-color: $color-button
         color: white
         border-radius: 5px
     &__btn:hover
@@ -83,7 +92,7 @@ h1, h2, h3, h4, h5, h6, p
         font-size: 14px
         color: #717171
 .span-text
-    color: #4CAF4F
+    color: $color-button
 .right-wrapper
     top: 100px
     &__img
@@ -102,18 +111,18 @@ h1, h2, h3, h4, h5, h6, p
         background-color: rgba(76, 175, 79, 0.3)
         margin-top: 390px
     &__dot-active
-        background-color: #4CAF4F
+        background-color: $color-button
 
 
 .icons-container
+    height: 133px
     &__content
         text-align: center
     &__header
         font-size: 25px
-        color: #4d4d4d
-        margin: 27px 0 5px 0
+        color: $color-header
     &__text
-        color: #717171
+        color: $color-text
         font-size: 14px
         margin-bottom: 28px
     &__carousel
@@ -126,3 +135,360 @@ h1, h2, h3, h4, h5, h6, p
         margin-right: 94px
         &:last-child
             margin-right: 0
+
+.carousel-container
+    height: 292px
+    &__content
+        text-align: center
+        margin-bottom: 27px
+    &__header
+        font-size: 25px
+        color: $color-header
+        padding-bottom: 5px
+        width: 320px
+        margin: 0 auto
+    &__text
+        font-size: 13px
+        color: $color-text
+    &__cards-box
+        display: flex
+        justify-content: center
+        padding-bottom: 26px
+    &__cards-item
+        width: 208px
+        height: 182px
+        border-radius: 5px
+        text-align: center
+        border: 1px solid #e9eef3
+        padding: 16px 11px
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04)
+
+
+.cards-item
+    margin-right: 88px
+    &:last-child
+        margin-right: 0
+    &__images
+        width: 45px
+        height: 38px
+    &__header
+        font-size: 25px
+        color: $color-header
+        margin: 11px 0 5px 0
+        white-space: normal
+    &__text
+        font-size: 12px
+        color: $color-text
+        width: 174px
+        height: 42px
+
+.second-section
+    height: 301px
+
+    &__container
+        display: flex
+        justify-content: center
+        flex-direction: row
+        padding-bottom: 33px
+    &__right-wrapper
+        width: 450px
+    &__left-wrapper
+        padding: 26px 35px 0 0
+    &__statistic-container
+        margin-bottom: 33px
+
+.left-wrapper
+    &__images
+        width: 307px
+        height: 229px
+
+.right-wrapper
+    &__header
+        font-size: 25px
+        color: $color-header
+        margin: 56px 0 11px 0
+    &__text
+        font-size: 12px
+        color: $color-text
+        margin-bottom: 22px
+    &__button
+        font-size: 12px
+        padding: 9px 22px
+        background-color: $color-button
+        color: white
+        border-radius: 5px
+        border: none
+        outline: none
+        box-shadow: none
+
+
+.statistic-container
+    &__container
+        height: 202px
+        background-color: $color-background
+        display: flex
+        justify-content: center
+        align-items: center
+        gap: 57px
+
+
+
+
+.statistic-item
+    display: flex
+    align-items: center
+    gap: 6px
+    &__images
+        width: 33px
+        height: 33px
+        flex: 0 0 40px
+    &__right-container
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        grid-template-rows: repeat(2, auto)
+        gap: 27px 57px
+    &__text
+        font-size: 11px
+        color: $color-text
+        margin: 0
+        line-height: 1.2
+    &__span
+        display: block
+        font-size: 19px
+        font-weight: 700
+        color: $color-header
+
+.left-wrapper
+    &__image
+        width: 307px
+        height: 301px
+
+.right-wrapper
+    &__header-new
+        font-size: 25px
+        color: $color-header
+        font-weight: 600
+        padding: 75px 0 11px 0
+    &__text-new
+        font-size: 11px
+        color: $color-text
+        width: 418px
+        padding-bottom: 22px
+    &__button-new
+        font-size: 12px
+        padding: 9px 22px
+        background-color: $color-button
+        color: white
+        border-radius: 5px
+        border: none
+        outline: none
+        box-shadow: none
+
+.third-section
+    height: 271px
+    &__container
+        display: flex
+        align-items: center
+        justify-content: center
+        gap: 54px
+        background-color: $color-background
+
+    &__carousel
+        display: flex
+    &__carousel-icons
+        margin-right: 28px
+        &:last-child
+            margin-right: 0
+    &__carousel-p
+        color: $color-button
+        font-size: 14px
+        font-weight: 700
+        display: flex
+        align-items: center
+.left-wrapper
+    &__image
+        margin: 22px
+        width: 226px
+        height: 226px
+.right-wrapper
+    &__text
+        font-size: 12px
+        color: $color-text
+        width: 520px
+        margin-bottom: 11px
+    &__header-third
+        font-size: 13px
+        color: $color-button
+        margin-bottom: 5px
+    &__text-after
+        font-size: 11px
+        color: $color-text
+        margin-bottom: 27px
+
+.fourth-section
+    //height: 354px
+    padding: 33px 0 61px 0
+    &__container
+        display: flex
+        flex-direction: column
+        align-items: center
+    &__header
+        font-size: 25px
+        line-height: 1.2
+        color: $color-header
+        text-align: center
+        font-weight: 500
+        margin-bottom: 6px
+    &__container-text
+        font-size: 12px
+        line-height: 1.3
+        color: $color-text
+        text-align: center
+        width: 437px
+        margin-bottom: 11px
+    &__cards
+        width: 100%
+        display: flex
+        justify-content: center
+        gap: 16px
+        flex-wrap: wrap
+        padding-bottom: 61px
+    &__card
+        position: relative
+        width: 256px
+        border-radius: 12px
+    &__cards-content
+        position: absolute
+        left: 16px
+        right: 16px
+        bottom: -57px
+        background-color: #f5f7fa
+        border-radius: 12px
+        padding: 18px 18px 16px
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12)
+        display: flex
+        flex-direction: column
+        align-items: center
+        text-align: center
+        min-height: 123px
+    &__text
+        font-size: 16px
+        font-weight: 500
+        color: $color-text
+        margin-bottom: 12px
+    &__images
+        width: 256px
+        height: 199px
+        object-fit: cover
+        border-radius: 12px
+        display: block
+    &__button
+        font-size: 16px
+        color: $color-button
+        font-weight: 600
+        display: inline-flex
+        align-items: center
+        background-color: #f5f7fa
+        border: none
+        outline: none
+        box-shadow: none
+
+
+
+
+
+
+
+
+.next-section
+    height: 209px
+    &__header
+        font-size: 44px
+        font-weight: bold
+        color: $color-header
+        text-align: center
+        margin: 22px 0 22px 0
+    &__btn
+        margin: 0 439px 22px 439px
+        padding: 9px 22px
+        font-size: 12px
+        background-color: $color-button
+        color: white
+        border-radius: 5px
+        border: none
+        outline: none
+        box-shadow: none
+
+.footer
+    background-color: $color-footer
+    padding: 45px 0 165px 114px
+    height: 230px
+    &__wrapper
+        display: flex
+        justify-content: space-between
+        align-items: flex-start
+        flex-wrap: wrap
+    &__logo
+        display: block
+        width: 96px
+        height: 18px
+        margin-bottom: 28px
+    &__text
+        color: white
+        font-size: 6px
+        line-height: 1.5
+    &__title
+        display: block
+        color: white
+        font-size: 15px
+        font-weight: 500
+        margin-bottom: 17px
+    &__item
+        margin-bottom: 8px
+    &__link
+        font-size: 10px
+        color: white
+        text-decoration: none
+    &__social
+        display: flex
+        gap: 11px
+        margin-top: 27px
+    &__images
+        width: 23px
+        height: 23px
+    &__email
+        width: 178px
+        height: 28px
+        background-color: #717171
+        border-radius: 8px
+        display: flex
+        align-items: center
+        padding: 0 13px
+    &__email-input
+        flex: 1
+        height: 100%
+        border: none
+        outline: none
+        background: transparent
+        color: white
+        font-size: 10px
+    &__email-btn
+        background: transparent
+        border: none
+        outline: none
+        display: inline-flex
+        align-items: center
+        justify-content: center
+        cursor: pointer
+        padding: 0
+    &__email-icon
+        width: 13px
+        height: 13px
+        display: block
+
+
+
+
+
+
+
